@@ -1,0 +1,251 @@
+//$primary-low-mid: #909090; // minimum for UI elements on #F9F9F9
+//$primary-medium: #696969; // minimum for normal text on white
+//$primary-high: #4d4d4d; // minimum for normal text on $primary-low
+$primary-very-high: #222222;
+//$primary: #000;
+
+// Global
+
+::placeholder {
+  color: $primary-medium;
+  opacity: 1;
+}
+
+.discourse-no-touch {
+  .btn-default,
+  .btn-icon {
+    .d-icon {
+      color: $primary-low-mid;
+    }
+    &.btn-default {
+      .d-icon {
+        color: $primary-medium;
+      }
+    }
+    &:hover,
+    &.btn-hover {
+      .d-icon {
+        color: $secondary;
+      }
+    }
+  }
+  .btn-primary .d-icon {
+    color: $secondary;
+  }
+  .btn-icon.ok,
+  .btn-icon.cancel,
+  .btn-danger {
+    .d-icon {
+      color: $secondary;
+    }
+  }
+  .btn-flat.delete.d-hover {
+    background: $danger;
+  }
+}
+
+.d-icon.d-icon-d-tracking,
+.d-icon.d-icon-d-watching {
+  color: $primary;
+}
+
+.nav-pills > li > a:not(.active):hover {
+  background: $tertiary-low;
+  color: $primary;
+}
+
+// Composer
+
+#reply-control .reply-to .reply-details .d-icon {
+  opacity: 1;
+  color: $primary-low-mid;
+}
+
+.d-editor-button-bar {
+  .btn-icon.btn-default .d-icon {
+    color: $primary-low-mid;
+    .discourse-no-touch & {
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+// Site header
+
+.menu-panel li a.widget-link:hover,
+.menu-panel li a.widget-link:focus,
+.menu-panel li.heading a.widget-link:hover,
+.menu-panel li.heading a.widget-link:focus {
+  color: $highlight;
+  background-color: $highlight-low;
+  .d-icon {
+    color: $highlight;
+  }
+}
+
+.d-header-icons .d-icon {
+  color: $primary-low-mid;
+}
+
+.d-header-icons .icon:hover .d-icon,
+.d-header-icons .icon:focus .d-icon {
+  color: $primary-high;
+}
+
+// Topic list
+
+table th {
+  color: $primary-medium;
+}
+
+.coldmap {
+  // Flattening these for now, don't really have the right colors atm
+  &-high {
+    color: $primary-medium !important;
+  }
+
+  &-med {
+    color: $primary-medium !important;
+  }
+
+  &-low {
+    color: $primary-medium !important;
+  }
+}
+
+.heatmap-high,
+.heatmap-high a {
+  color: #dc3249 !important;
+}
+.heatmap-med,
+.heatmap-med a {
+  color: #ae5b54 !important;
+}
+.heatmap-low,
+.heatmap-low a {
+  color: #8f6d5b !important;
+}
+
+// Posts
+
+.discourse-no-touch .topic-body .actions .fade-out {
+  opacity: 1;
+}
+
+.topic-body .reply-to-tab {
+  color: $primary-medium;
+  .d-icon {
+    color: $primary-low-mid;
+  }
+}
+
+.timeline-container .topic-timeline {
+  .timeline-scrollarea {
+    border-color: $primary-low-mid;
+  }
+  .timeline-handle {
+    background: $tertiary;
+  }
+}
+
+.topic-map h4 {
+  color: $primary;
+}
+
+.quote-controls,
+.quote-controls .d-icon {
+  color: $primary-medium;
+}
+
+blockquote {
+  a,
+  a:visited {
+    color: darken($tertiary, 5%);
+  }
+}
+.meta .d-icon + .filename,
+.meta .informations {
+  color: $secondary;
+}
+
+#topic-footer-buttons .bookmark.bookmarked:hover .d-icon-bookmark {
+  color: $secondary;
+}
+
+// Post controls
+
+nav.post-controls {
+  // this is a bit tedious
+  a,
+  button {
+    color: $primary-medium;
+    .d-icon {
+      color: $primary-low-mid;
+    }
+    .discourse-no-touch & {
+      &:hover {
+        color: $secondary;
+        background: $primary-medium;
+        .d-icon {
+          color: $secondary;
+        }
+      }
+    }
+    &:focus {
+      background: $primary-medium;
+    }
+  }
+  .discourse-no-touch & {
+    .double-button:hover {
+      button {
+        background: $primary-medium;
+        color: $secondary;
+        .d-icon {
+          color: $secondary;
+        }
+        &.has-like {
+          .d-icon {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  button.bookmark.bookmarked.d-hover .d-icon {
+    color: $secondary;
+  }
+  .double-button button.button-count + .toggle-like.d-hover {
+    background: $primary-medium;
+    .d-icon {
+      color: $love-low;
+    }
+  }
+  .discourse-no-touch & {
+    .double-button button.button-count.d-hover {
+      background: $primary-medium;
+      color: $secondary;
+    }
+  }
+  button.create {
+    .d-icon {
+      color: $primary-low-mid;
+    }
+    &.d-hover {
+      color: $secondary;
+      .d-icon {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+// Admin
+
+.admin-controls {
+  .nav-pills > li > a:not(.active):hover {
+    background: $primary-medium;
+    color: $secondary;
+  }
+}
