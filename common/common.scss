@@ -1,9 +1,3 @@
-//$primary-low-mid: #909090; // minimum for UI elements on #F9F9F9
-//$primary-medium: #696969; // minimum for normal text on white
-//$primary-high: #4d4d4d; // minimum for normal text on $primary-low
-$primary-very-high: #222222;
-//$primary: #000;
-
 // Global
 
 ::placeholder {
@@ -42,11 +36,6 @@ $primary-very-high: #222222;
   .btn-flat.delete.d-hover {
     background: $danger;
   }
-}
-
-.d-icon.d-icon-d-tracking,
-.d-icon.d-icon-d-watching {
-  color: $primary;
 }
 
 .nav-pills > li > a:not(.active):hover {
