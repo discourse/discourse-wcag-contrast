@@ -129,6 +129,15 @@ table th {
 .badge-notification.unread-posts {
   background: $tertiary;
 }
+.select-kit.dropdown-select-box.period-chooser
+  .period-chooser-header
+  h2.selected-name
+  .top-date-string,
+.select-kit.dropdown-select-box.period-chooser
+  .period-chooser-row
+  .top-date-string {
+  color: $primary-high;
+}
 
 // Posts
 
@@ -174,6 +183,10 @@ blockquote {
 
 #topic-footer-buttons .bookmark.bookmarked:hover .d-icon-bookmark {
   color: $secondary;
+}
+
+.gap {
+  color: $primary-medium;
 }
 
 // Post controls
@@ -241,6 +254,15 @@ nav.post-controls {
       }
     }
   }
+}
+
+// Categories
+
+.list-cell,
+.table-heading,
+.category-list td,
+.category-list th {
+  color: $primary-medium;
 }
 
 // Admin

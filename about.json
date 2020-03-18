@@ -20,6 +20,20 @@
       "danger": "BB1122",
       "success": "3d854d",
       "love": "9D256B"
+    },
+    "WCAG-Dark": {
+      "primary": "ffffff",
+      "primary-medium": "999999",
+      "primary-low-mid": "888888",
+      "secondary": "000000",
+      "tertiary": "759AFF",
+      "quaternary": "759AFF",
+      "header_background": "000000",
+      "header_primary": "ffffff",
+      "highlight": "3369FF",
+      "danger": "BB1122",
+      "success": "3d854d",
+      "love": "9D256B"
     }
   }
 }
