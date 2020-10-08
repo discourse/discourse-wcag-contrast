@@ -1,3 +1,6 @@
+// Only editing colors here.
+// Outside of the heat/cold-mapping all colors are defined in color pallettes
+
 // Global
 
 ::placeholder {
@@ -8,9 +11,6 @@
 .discourse-no-touch {
   .btn-default,
   .btn-icon {
-    .d-icon {
-      color: var(--primary-low-mid);
-    }
     &.btn-default {
       .d-icon {
         color: var(--primary-medium);
@@ -67,10 +67,16 @@
 .menu-panel li a.widget-link:focus,
 .menu-panel li.heading a.widget-link:hover,
 .menu-panel li.heading a.widget-link:focus {
-  color: var(--highlight);
-  background-color: var(--highlight-low);
+  color: var(--primary);
+  background-color: var(--highlight-medium);
   .d-icon {
-    color: var(--highlight);
+    color: var(--primary);
+  }
+}
+
+.menu-panel .panel-body-bottom .btn:hover {
+  .d-icon {
+    color: var(--primary);
   }
 }
 
@@ -94,17 +100,16 @@ table th {
 }
 
 .coldmap {
-  // Flattening these for now, don't really have the right colors atm
   &-high {
-    color: var(--primary-medium) !important;
+    color: #6c77cc !important;
   }
 
   &-med {
-    color: var(--primary-medium) !important;
+    color: #548eaa !important;
   }
 
   &-low {
-    color: var(--primary-medium) !important;
+    color: #32a1a5 !important;
   }
 }
 
@@ -189,6 +194,14 @@ blockquote {
   color: var(--primary-medium);
 }
 
+.badge-notification.clicks {
+  color: var(--primary-high);
+}
+
+.topic-map {
+  background: transparent;
+}
+
 // Post controls
 
 nav.post-controls {
@@ -253,6 +266,26 @@ nav.post-controls {
         color: var(--secondary);
       }
     }
+  }
+  .actions a,
+  .actions button {
+    color: var(--primary-medium);
+  }
+}
+
+nav.post-controls
+  .actions
+  .double-button
+  button.button-count
+  + .toggle-like.d-hover {
+  background: var(--primary-medium);
+}
+
+.topic-admin-menu-button-container,
+.timeline-controls {
+  .btn .d-icon {
+    // admin wrenches
+    color: var(--primary-medium);
   }
 }
 
